@@ -1,0 +1,111 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: steelblue;
+
+  font-family: sans-serif;
+}
+
+main {
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  padding: 40px 0;
+  border-radius: 10px;
+
+  background-color: white;
+  box-shadow: 1px 1px 10px -3px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 20px;
+
+  width: 70%;
+  margin: 0;
+
+  font-size: 18px;
+}
+
+textarea {
+  height: 100px;
+}
+
+textarea, #comment-label, .label-span, #radios, #checkboxes, select {
+  grid-column: 2 span;
+}
+
+select {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#radios, #checkboxes {
+  display: grid;
+  grid-template-columns: 30px 80px;
+  align-items: center;
+  gap: 6px;
+
+  margin: 0 auto;
+}
+
+#checkboxes {
+  grid-template-columns: 30px 200px;
+
+  margin: 0;
+
+  text-align: left;
+}
+
+#radios input {
+  height: 15px;
+}
+
+#comment-label, input, #description, .label-span {
+  text-align: center;
+}
+
+#description {
+  margin-bottom: 30px;
+
+  color: #111;
+}
+
+input, select {
+  height: 30px;
+
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  grid-column: 2 span;
+
+  padding: 5px;
+  border: none;
+
+  background: #D18D28;
+  box-shadow: 1px 1px 10px -3px inset;
+
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background: #B37922;
+}
